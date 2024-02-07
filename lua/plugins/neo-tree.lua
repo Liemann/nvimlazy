@@ -9,6 +9,7 @@ return {
 
   config = function()
     vim.keymap.set("n", "<C-e>", ":Neotree filesystem reveal left<CR>", {})
+    vim.keymap.set("n", "<leader>e", ":Neotree toggle<CR>", {})
     local neotree = require("neo-tree")
     neotree.setup({
       -- Does not work, supposed to show hidden files
